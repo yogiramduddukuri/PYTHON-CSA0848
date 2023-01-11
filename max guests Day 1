@@ -1,0 +1,7 @@
+def max_guests(T, E, L):
+  guests = 0
+  max_guests = 0
+  for i in range(T):
+    guests += E[i] - L[i]
+    max_guests = max(max_guests, guests)
+  return max_guests
